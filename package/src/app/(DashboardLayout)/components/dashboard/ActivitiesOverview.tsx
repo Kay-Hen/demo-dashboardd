@@ -6,7 +6,7 @@ import dynamic from "next/dynamic";
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 
-const SalesOverview = () => {
+const ActivitiesOverview = () => {
 
     // select
     const [month, setMonth] = React.useState('1');
@@ -68,7 +68,7 @@ const SalesOverview = () => {
             tickAmount: 4,
         },
         xaxis: {
-            categories: ['16/08', '17/08', '18/08', '19/08', '20/08', '21/08', '22/08', '23/08'],
+            categories: ['Clients', 'Staff Members', 'Visitors', 'Calls', 'Reports', 'Inbox'],
             axisBorder: {
                 show: false,
             },
@@ -79,19 +79,19 @@ const SalesOverview = () => {
         },
     };
     const seriescolumnchart: any = [
+        // {
+        //     name: 'Eanings this month',
+        //     data: [355, 390, 300, 350, 390, 180],
+        // },
         {
-            name: 'Eanings this month',
-            data: [355, 390, 300, 350, 390, 180, 355, 390],
-        },
-        {
-            name: 'Expense this month',
-            data: [280, 250, 325, 215, 250, 310, 280, 250],
+            name: 'total number this month',
+            data: [1, 4, 1, 2, 34, 83],
         },
     ];
 
     return (
 
-        <DashboardCard title="Sales Overview" action={
+        <DashboardCard title="Activities Overview" action={
             <Select
                 labelId="month-dd"
                 id="month-dd"
@@ -114,4 +114,4 @@ const SalesOverview = () => {
     );
 };
 
-export default SalesOverview;
+export default ActivitiesOverview;

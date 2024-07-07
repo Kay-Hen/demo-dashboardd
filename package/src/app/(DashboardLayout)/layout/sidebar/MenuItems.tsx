@@ -6,16 +6,17 @@ import {
   IconMoodHappy,
   IconTypography,
   IconUserPlus,
+  IconUsers,
+  IconMail,
+  IconReport,
+  IconCalendar,
+  IconSettings,
+  IconPhone,
 } from "@tabler/icons-react";
 
 import { uniqueId } from "lodash";
 
 const Menuitems = [
-  {
-    navlabel: true,
-    subheader: "Home",
-  },
-
   {
     id: uniqueId(),
     title: "Dashboard",
@@ -23,52 +24,52 @@ const Menuitems = [
     href: "/",
   },
   {
-    navlabel: true,
-    subheader: "Utilities",
+    id: uniqueId(),
+    title: "Manage Staff",
+    icon: IconUsers,
+    href: "/manage/manage-staff",
   },
   {
     id: uniqueId(),
-    title: "Typography",
-    icon: IconTypography,
-    href: "/utilities/typography",
+    title: "Visitors",
+    icon: IconUsers,
+    href: "/visitors",
   },
   {
     id: uniqueId(),
-    title: "Shadow",
-    icon: IconCopy,
-    href: "/utilities/shadow",
-  },
-  {
-    navlabel: true,
-    subheader: "Auth",
+    title: "Clients",
+    icon: IconUsers,
+    href: "/clients",
   },
   {
     id: uniqueId(),
-    title: "Login",
-    icon: IconLogin,
-    href: "/authentication/login",
+    title: "Daily Reports",
+    icon: IconReport,
+    href: "/daily-reports",
   },
   {
     id: uniqueId(),
-    title: "Register",
-    icon: IconUserPlus,
-    href: "/authentication/register",
-  },
-  {
-    navlabel: true,
-    subheader: "Extra",
+    title: "Mail",
+    icon: IconMail,
+    href: "/mail",
   },
   {
     id: uniqueId(),
-    title: "Icons",
-    icon: IconMoodHappy,
-    href: "/icons",
+    title: "Manage Calls",
+    icon: IconPhone,
+    href: "/manage/manage-calls",
   },
   {
     id: uniqueId(),
-    title: "Sample Page",
-    icon: IconAperture,
-    href: "/sample-page",
+    title: "Appointment",
+    icon: IconCalendar,
+    href: "/appointment",
+  },
+  {
+    id: uniqueId(),
+    title: "Administration",
+    icon: IconSettings,
+    href: "/administration",
   },
 ];
 
