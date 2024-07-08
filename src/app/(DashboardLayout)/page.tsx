@@ -5,13 +5,41 @@ import PageContainer from '@/app/(DashboardLayout)/components/container/PageCont
 import ActivitiesOverview from '@/app/(DashboardLayout)/components/dashboard/ActivitiesOverview';
 import DashboardMiniCard from './components/dashboard/dashboard-mini';
 import ReportSummary from './components/dashboard/reportSummary';
+// import WelcomeCard from './components/dashboard/welcomecard';
+
+
+
+// export const Weclome = () => {
+
+//   return <div>
+
+// <PageContainer title='Welcome'description='Welcome message'>
+//       <Box>
+//         <Grid container spacing={1}>
+//         <Grid item xs={12} lg={3}>
+//                 <WelcomeCard 
+//                     title="Welcome"
+//                     subtitle="1"
+//                     progress_label="Adam"
+//                     progress_color="warning"
+//                     progress_value={70}
+//                 />
+//         </Grid>
+//         </Grid>
+//       </Box>
+  
+//             </PageContainer>
+//   </div> 
+  
+// };
+ 
 
 const Dashboard = () => {
   return (
     <PageContainer title="Dashboard" description="this is Dashboard">
       <Box>
         <Grid container spacing={3}>
-          
+    
         <Grid item xs={12} lg={3}>
                 <DashboardMiniCard 
                     title="TOTAL CLIENTS"
@@ -64,5 +92,7 @@ const Dashboard = () => {
 }
 
 export default Dashboard;
+
+
 
 

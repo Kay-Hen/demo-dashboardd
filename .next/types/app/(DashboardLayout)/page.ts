@@ -1,4 +1,4 @@
-// File: /Users/godsfavourkio/Desktop/demo-dashboardd/src/app/(DashboardLayout)/page.tsx
+// File: C:\Users\kwabe\Downloads\New Demo\demo-dashboardd\src\app\(DashboardLayout)\page.tsx
 import * as entry from '../../../../src/app/(DashboardLayout)/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
