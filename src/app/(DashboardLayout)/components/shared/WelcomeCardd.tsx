@@ -3,35 +3,16 @@ import { Card, CardContent, Typography, Stack, Box } from "@mui/material";
 
 type Props = {
   title?: string;
-  subtitle?: string;
-  action?: JSX.Element | any;
-  footer?: JSX.Element;
-  cardheading?: string | JSX.Element;
-  headtitle?: string | JSX.Element;
-  headsubtitle?: string | JSX.Element;
-  middlecontent?: string | JSX.Element;
 };
 
 const WelcomeWelcomeCard = ({
     title,
-    subtitle,
-    cardheading,
-    headtitle,
-    headsubtitle,
-    middlecontent,
   }: Props) => {
     return (
       <Card sx={{ padding: 0 }} elevation={9} variant={undefined}>
-        {cardheading ? (
-          <CardContent>
-            <Typography variant="h5">{headtitle}</Typography>
-            <Typography variant="subtitle2" color="textSecondary">
-              {headsubtitle}
-            </Typography>
-          </CardContent>
-        ) : (
+        
           <CardContent sx={{ p: "30px" }}>
-            {title ? (
+            
               <Stack
                 direction="row"
                 spacing={2}
@@ -40,21 +21,12 @@ const WelcomeWelcomeCard = ({
                 mb={3}
               >
                 <Box>
-                  {title ? <Typography variant="h5">{title}</Typography> : ""}
-  
-                  {subtitle ? (
-                    <Typography variant="subtitle2" color="textSecondary">
-                      {subtitle}
-                    </Typography>
-                  ) : (
-                    ""
-                  )}
+                    <Typography variant="h5">{title}</Typography>
                 </Box> 
               </Stack>
-            ) : null}
+            
           </CardContent>
-        )}
-        {middlecontent}
+       
       </Card>
     );
   };
