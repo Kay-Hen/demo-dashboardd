@@ -3,10 +3,11 @@ import { Card, CardContent, Typography, Stack, Box } from "@mui/material";
 
 type Props = {
   title?: string;
+  children?: ReactNode; 
 };
 
 const WelcomeWelcomeCard = ({
-    title,
+    title, children 
   }: Props) => {
     return (
       <Card sx={{ padding: 0 }} elevation={9} variant={undefined}>
@@ -24,7 +25,7 @@ const WelcomeWelcomeCard = ({
                     <Typography variant="h5">{title}</Typography>
                 </Box> 
               </Stack>
-            
+              {children}
           </CardContent>
        
       </Card>

@@ -6,8 +6,7 @@ import { Typography, Box, LinearProgress } from '@mui/material';
 import WelcomeWelcomeCard from '../shared/WelcomeCardd';
 
 const WelcomeCard = ({ name }: { 
-  name: string; 
-}) => {
+  name: string }) => {
   return (
     <WelcomeWelcomeCard title= {`Welcome, ${name}`}>
  
