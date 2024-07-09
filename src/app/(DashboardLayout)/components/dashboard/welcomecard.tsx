@@ -10,7 +10,7 @@ const WelcomeCard = ({ name }: {
 }) => {
   return (
     <WelcomeWelcomeCard title= {`Welcome, ${name}`}>
-
+ 
 </WelcomeWelcomeCard>
   );
 };

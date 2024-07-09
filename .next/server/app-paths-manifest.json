@@ -1,4 +1,4 @@
 {
-  "/(DashboardLayout)/manage/manage-staff/page": "app/(DashboardLayout)/manage/manage-staff/page.js",
-  "/(DashboardLayout)/page": "app/(DashboardLayout)/page.js"
+  "/(DashboardLayout)/page": "app/(DashboardLayout)/page.js",
+  "/(DashboardLayout)/manage/manage-staff/page": "app/(DashboardLayout)/manage/manage-staff/page.js"
 }
