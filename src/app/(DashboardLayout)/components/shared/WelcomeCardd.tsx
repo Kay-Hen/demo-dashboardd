@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { Card, CardContent, Typography, Stack, Box } from "@mui/material";
 
 type Props = {
@@ -9,7 +9,6 @@ type Props = {
   cardheading?: string | JSX.Element;
   headtitle?: string | JSX.Element;
   headsubtitle?: string | JSX.Element;
-  children?: JSX.Element;
   middlecontent?: string | JSX.Element;
 };
 
