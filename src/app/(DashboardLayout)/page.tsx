@@ -5,13 +5,14 @@ import PageContainer from '@/app/(DashboardLayout)/components/container/PageCont
 import ActivitiesOverview from '@/app/(DashboardLayout)/components/dashboard/ActivitiesOverview';
 import DashboardMiniCard from './components/dashboard/dashboard-mini';
 import ReportSummary from './components/dashboard/reportSummary';
-// import WelcomeCard from './components/dashboard/welcomecard';
+import WelcomeCard from './components/dashboard/welcomecard';
 
 
 
 // export const Weclome = () => {
 
-//   return <div>
+//   return (
+//   <div>
 
 // <PageContainer title='Welcome'description='Welcome message'>
 //       <Box>
@@ -30,14 +31,17 @@ import ReportSummary from './components/dashboard/reportSummary';
   
 //             </PageContainer>
 //   </div> 
-  
+//   )
 // };
  
 
 const Dashboard = () => {
   return (
     <PageContainer title="Dashboard" description="this is Dashboard">
+      <WelcomeCard name="Adam" />
+      <br />
       <Box>
+      
         <Grid container spacing={3}>
     
         <Grid item xs={12} lg={3}>

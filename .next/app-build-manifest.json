@@ -26,15 +26,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/loading.js"
     ],
-    "/(DashboardLayout)/manage/manage-staff/page": [
+    "/(DashboardLayout)/administration/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(DashboardLayout)/manage/manage-staff/page.js"
+      "static/chunks/app/(DashboardLayout)/administration/page.js"
     ],
-    "/(DashboardLayout)/visitors/page": [
+    "/(DashboardLayout)/manage/manage-calls/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(DashboardLayout)/visitors/page.js"
+      "static/chunks/app/(DashboardLayout)/manage/manage-calls/page.js"
     ]
   }
 }
